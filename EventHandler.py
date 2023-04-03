@@ -4,12 +4,12 @@ from pathlib import Path
 
 from watchdog.events import FileSystemEventHandler
 
-from Desk_cleaner.extensions import extension_paths
+from desktop_cleaner.extensions import extension_paths
 
 
 def add_date_to_path(path: Path):
     """
-    Helper function that adds current year/month to destination path. If the path
+    Function that adds current year/month to destination path. If the path
     doesn't already exist, it is created.
 
     :param Path path: destination root to append subdirectories based on date
@@ -22,7 +22,7 @@ def add_date_to_path(path: Path):
 
 def rename_file(source: Path, destination_path: Path):
     """
-    Helper function that renames file to reflect new path. If a file of the same name
+    Function that renames file to reflect new path. If a file of the same name
     already exists in the destination folder, the file name is numbered and incremented until the filename
     is unique (prevents overwriting files).
 

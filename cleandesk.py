@@ -8,7 +8,7 @@ from desktop_cleaner.EventHandler import EventHandler
 
 if __name__ == '__main__':
     watch_path = Path.home() / 'Downloads'
-    destination_root = Path.home() / 'Downloads/holder of things'
+    destination_root = Path.home() / 'Downloads' / 'Principal Shelf'
     event_handler = EventHandler(watch_path=watch_path, destination_root=destination_root)
 
     observer = Observer()
